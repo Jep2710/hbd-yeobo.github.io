@@ -75,7 +75,7 @@ body {
     padding: 3%;
     cursor: pointer;
     float: left;
-    width: 95%;
+    width: 98%;
 }
 .push__main .push_button:after {
     content: "";

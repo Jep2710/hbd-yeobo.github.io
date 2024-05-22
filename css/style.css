@@ -1,0 +1,442 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-image: url(./img/iphone-14-2560x1440-abstract-ios-16-hd-24001.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 200vh;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.push__wrapper {
+    margin-top: 75px;
+}
+
+.push__box {
+    display: none;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    z-index: 1;
+    padding: 10px 12px;
+    margin: 8px 0;
+}
+
+.push__box:last-child {
+    display: block;
+}
+
+.push__box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.push__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.push__top .col {
+    display: flex;
+    align-items: center;
+}
+
+.push__imgwrap {
+    margin: 2px 5px 0 0;
+}
+
+.push__icon {
+    max-width: 25px;
+    width: auto;
+}
+
+.push__title {
+    color: #bf201c;
+    text-transform: uppercase;
+}
+
+.push__time {
+    font-size: 14px;
+    color: #0123cd;
+}
+
+.push__person {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.lockscreen {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  margin: 10px auto;
+  background-image: url('./images/wallpaper.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(.7);
+}
+
+.lockscreen__top {
+  width: 100%;
+  height: 30px;
+  color: white;
+}
+
+.lockscreen__top .notch {
+  width: 219px;
+  height: 30px;
+  background-color: black;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+}
+
+.lockscreen__top .clock {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  font-size: 15px;
+}
+
+.lockscreen__top .icons {
+  width: 66px;
+  height: 11px;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  background-image: url('./images/top_right_icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lockscreen__center-block {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.lockscreen__center-block .padlock {
+  display: block;
+  width: 23px;
+  height: 34px;
+  margin: 0 auto;
+  background-image: url('./images/padlock.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lockscreen__center-block .clock {
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 83px;
+}
+
+.lockscreen__center-block .date {
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+}
+
+.wrapper{
+
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15px;
+}
+.wrapper .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+.wrapper .top span{
+    color: #fff;
+}
+.wrapper .top label i{
+    color: #fff;
+    margin-left: 6px;
+    font-size: 14px;
+}
+.wrapper .time{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.wrapper .time i{
+    color: #f4f2ff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.wrapper .time h1{
+    color: #f4f2ff;
+    font-size: 70px;
+    font-weight: 300;
+}
+.wrapper .time span{
+    color: #fff;
+    font-size: 20px;
+    display: inherit;
+    margin-top: -16px;
+}
+.noti-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.noti-title h3{
+    color: #fff;
+    font-weight: 400;
+}
+.noti-title i{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #000;
+    background: #ffffff87;
+    border-radius: 50px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+.notification{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.notification .noti-top{
+    background: #ffffffbf;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(8px);
+}
+.notification .noti-bottom{
+    background: #ffffff7d;
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.notification .noti-top label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.notification .noti-top label span{
+    color: #5a5a5a;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.notification .noti-top label span i{
+    width: 20px;height: 20px;
+    background: linear-gradient(20deg, #2196f3,#8bccff);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 6px;
+    margin-right: 8px;
+    color: #fff;
+}
+.notification .noti-top h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.notification .noti-top p{
+    font-size: 15px;
+}
+.notification .noti-bottom h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.notification .noti-bottom p{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.notification .noti-bottom button{
+    width: 45%;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background: #ffffff9c;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+.notification .noti-bottom button:hover{
+    background: #fff;
+}
+
+.light-camera{
+    margin-top: 30px;
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.light-camera i{
+    width: 55px;height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #0000005e;
+    border-radius: 50px;
+    color: #fff;
+    transition: .5s;
+    font-size: 22px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+.light-camera i:hover{
+    background: #00000096;
+    transform: scale(1.2);
+}
+.home-button{
+    position: absolute;
+    width: 145px;height: 5px;
+    background: #fff;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    border-radius: 50px;
+}
+
+.notifications {
+  width: 100%;
+  padding: 30px 10px 0 10px;
+}
+
+.notification__item {
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  border-radius: 13px;
+  background-color: rgba(38, 38, 38, 0.8);
+}
+
+.notification__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.notification-icon--app {
+  background-image: url('./images/app.png');
+}
+
+.notification-icon--person {
+  background-image: url('./images/app_person.png');
+}
+
+.notification-icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.notification-info {
+  flex: 1;
+  position: relative;
+  color: white;
+  font-size: 13px;
+}
+
+.notification-title,
+.notification-text {
+  display: block;
+}
+
+.notification-title {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.notification-time {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #a0a0a7;
+}
+
+.btn-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #f5f5f526;
+}
+
+.btn-bottom--camera {
+  right: 40px;
+}
+
+.btn-bottom--flashlight {
+  left: 40px;
+}
+
+.camera, .flashlight {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.camera {
+  display: block;
+  width: 25px;
+  height: 19px;
+  background-image: url('./images/camera.png');
+}
+
+.flashlight {
+  display: block;
+  width: 10px;
+  height: 22px;
+  background-image: url('./images/flashlight.png');
+}
+
+
+.lockscreen-bottom-bar {
+  position: absolute;
+  bottom: 8px;
+  width: 134px;
+  height: 5px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}

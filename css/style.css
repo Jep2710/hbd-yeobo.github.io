@@ -62,18 +62,33 @@ body {
     display: block;
 }
 
-.push__main .push_button button{
-    width: 45%;
-    padding: 6px;
-    border: none;
-    border-radius: 6px;
-    background: #ffffff9c;
-    margin-bottom: 8px;
+.push__main .push_button button {
+    color: #007AFF;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border:  none;
+    border-top:  1px solid rgb(220,224,226);
+    border-left: 1px solid rgb(220,224,226);
+    padding: 18px 10px;
     cursor: pointer;
-    transition: .4s;
+    float: left;
+    width: 50%;
 }
-.push__main .push_button button:hover{
-    background: #fff;
+.push__main .push_button:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.push__main .push_button button:not(:last-child) {
+    border-left: none;
+}
+.push__main .push_button button:hover {
+    background-color: rgb(250,250,250);
+}
+.push__main .push_button button:active {
+    background-color: rgb(245,245,245);
 }
 
 .push__box::before {

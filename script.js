@@ -8,4 +8,7 @@ $(document).ready(function() {
     setTimeout(() => {
         $(".push__box:nth-child(3)").slideDown(400);
     }, 3000);
+    setTimeout(() => {
+        $(".push__box:nth-child(4)").slideDown(400);
+    }, 4000);
 });

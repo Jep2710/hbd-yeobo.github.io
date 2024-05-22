@@ -92,9 +92,6 @@ body {
   width: 375px;
   height: 812px;
   margin: 10px auto;
-  background-image: url('./images/wallpaper.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   transform: scale(.7);
 }
 

@@ -164,7 +164,7 @@ body {
 
     flex-direction: column;
     width: 100%;
-    padding: 10px 15px 0px 15px;
+    padding: 5% 5%;
 }
 .wrapper .top{
     display: flex;

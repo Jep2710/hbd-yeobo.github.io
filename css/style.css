@@ -72,7 +72,7 @@ body {
     cursor: pointer;
     transition: .4s;
 }
-.push_main .push_button button:hover{
+.push__main .push_button button:hover{
     background: #fff;
 }
 

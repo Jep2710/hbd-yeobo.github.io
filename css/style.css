@@ -64,11 +64,12 @@ body {
 
 .push__main .push_button button {
     color: #007AFF;
-    background-color: #fff;
+    background-color: #ffffff9c;
     font-size: 16px;
     font-weight: 500;
     outline: none;
-    border:  none;
+    border: none;
+    border-radius: 12px;
     border-top:  1px solid rgb(220,224,226);
     border-left: 1px solid rgb(220,224,226);
     padding: 18px 10px;

@@ -12,3 +12,21 @@ $(document).ready(function() {
         $(".push__box:nth-child(4)").slideDown(400);
     }, 4000);
 });
+
+document.getElementById("openPopup").addEventListener("click", function() {
+            document.getElementById("myPopup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        });
+
+        document.getElementById("closePopup").addEventListener("click", function() {
+            document.getElementById("myPopup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        });
+
+        // Close the popup if the user clicks anywhere outside of it
+        window.addEventListener("click", function(event) {
+            if (event.target == document.getElementById("overlay")) {
+                document.getElementById("myPopup").style.display = "none";
+                document.getElementById("overlay").style.display = "none";
+            }
+        });

@@ -1,31 +1,101 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Rena Nabila <3</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-  <style>
-    .border {
-    display: none;
-    position: relative;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
-    z-index: 1;
-    padding: 10%;
-    }
-    h1 {
-      size: 75%;
-    }
-    
-  </style>
-  </head>
-    <body>
-      <center>
-      <div class="border">
-        <div class="typewriter">
-      <h1>
-        Haii sayaangg 😘
-      </h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="top">
+                <span>Ilysm 💝</span>
+                <label>
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-half"></i>
+                </label>
+            </div>
+
+            <div class="time">
+                <i class="fas fa-lock-open"></i>
+                <h1>0:00</h1><span>Monday, June 10</span>
+            </div>
+          </div>
+      <div class="push__wrapper">
+            <div class="push__box">
+                <div class="push__content">
+                    <div class="push__top">
+                        <div class="col">
+                            <div class="push__imgwrap">
+                                <img class="push__icon" src="./img/icon-ios-msg.png" alt="">
+                            </div>
+                            <span class="push__title">message</span>
+                        </div>
+                        <div class="col">
+                            <div class="push__time">now</div>
+                        </div>
+                    </div>
+                    <div class="push__main">
+                        <div class="push__person">Your Jeproy 💐🌹</div>
+                        <p id="message">Selamat malam dedeku sayang, cintaku, cantikkuu 💝</p>
+                       <div class="push_button">
+                         <button id="changebutton" onclick="changeMessage()">Pesan selanjutnya</button>
+                       </div>
+                    </div
+                </div>
+            </div>
+            </<div>
+            </div>
+            <div class="push__box">
+                <div class="push__content">
+                    <div class="push__top">
+                        <div class="col">
+                            <div class="push__imgwrap">
+                                <img class="push__icon" src="./img/cake.png" alt="">
+                            </div>
+                            <span class="push__title">Special For You</span>
+                        </div>
+                        <div class="col">
+                            <div class="push__time">now</div>
+                        </div>
+                    </div>
+                    <div class="push__main">
+                        <div class="push__person">Your Jeproy 💐🌹</div>
+                        <p>Aku punya sesuatu untuk kamu sayang, dibukaa yaa 💝💝💝</p>
+                      <div class="push_button">
+                          <button id="openPopup">Buka disini sayang 💝
+                          </button>
+                      </div>
+    <div id="overlay"></div>
+    <div id="myPopup" class="card">
+      <div class="info__padding">
+        <div class="popup_padding">
+          <img src="cake.gif" width="215" height="215" alt="Barakallah Fii Umrik dedeeku sayang">
+        <br><br>
+          <h3>Barakallah fii Umrik Humairaku 💖🎂</h3>
+        <br>
+          <h2>Ini kue online dariku 😌</h2>
+          <h2>Jangan dihabisin ya, suapin aku sedikit 😋</h2>
+    </div>
       </div>
+        <div class="button_popup">
+          <button id="closePopup">Tutup</button>
         </div>
-      </center>
-    </body>
+                 </div>
+           </div>
+    </div>
+            </div>
+            
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="nextmsg.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

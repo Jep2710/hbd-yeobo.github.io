@@ -21,6 +21,9 @@ document.getElementById("openPopup").addEventListener("click", function() {
         document.getElementById("closePopup").addEventListener("click", function() {
             document.getElementById("myPopup").style.display = "none";
             document.getElementById("overlay").style.display = "none";
+            document.getElementById("push_button").style.display = "none";
+            document.getElementById("info__padding").style.display = "none";
+            document.getElementById("card").style.display = "none";
         });
 
         // Close the popup if the user clicks anywhere outside of it
@@ -28,5 +31,8 @@ document.getElementById("openPopup").addEventListener("click", function() {
             if (event.target == document.getElementById("overlay")) {
                 document.getElementById("myPopup").style.display = "none";
                 document.getElementById("overlay").style.display = "none";
+                document.getElementById("push_button").style.display = "none";
+                document.getElementById("info__padding").style.display = "none";
+                document.getElementById("card").style.display = "none";
             }
         });

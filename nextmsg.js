@@ -1,8 +1,8 @@
 let messages = [
       "Selamat malam dedeku sayang, cintaku, cantikkuu 💝",
-      "Selamat pagi, semoga harimu menyenangkan! 🌞",
-      "Tetap semangat dan jaga kesehatan! 💪",
-      "Kamu luar biasa dan istimewa! 🌟",
+      "Selamat pagi jugaa yaa cintaa, barakallah fii umrik 🥳💝",
+      "Hari ini adalah hari membahagiakan untuk kamu dan aku 💞",
+      "Karna hari ini adalah hari terlahirnya dunia mu dan dunia ku 🌎🌕🌞💫🌈",
       "Jangan lupa tersenyum hari ini! 😊"
 ];
 

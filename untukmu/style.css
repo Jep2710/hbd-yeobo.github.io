@@ -1,23 +1,40 @@
 *{
   * margin: 0; padding: 0;
   * box-sizing: border-box;
-  *
-  *}
+  }
+
+body{
+  background-image: url("yeobo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+}
 
 html{
   font-size: 62,5%;
 }
 
 .container{
-  background: #222;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
 }
 
 .container .heading{
   font-size: 3rem;
-  padding: 2rem 0;
+  padding: 15px 0px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0 .5rem 1rem #000;
+  color: #fff;
+}
+.container .heading2{
+  font-size: 20px;
+  padding: 0px 0px 5px 0px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
 }
 
@@ -28,7 +45,7 @@ html{
 }
 
 .container .music-container .box{
-  height: 12rem;
+  height: 7rem;
   width: 18rem;
   display: flex;
   align-items: center;
@@ -36,7 +53,7 @@ html{
   border-radius: 1rem;
   box-shadow: 0 .5rem 1rem #000;
   overflow: hidden;
-  margin: 1rem;
+  margin: 5px;
 }
 
 .container .music-container .image{
@@ -54,7 +71,9 @@ html{
 }
 
 .container .music-container .music audio{
-  width: 100%;
+  width: 170px;
+  height: 25px;
+  margin: 5px 0px 15px 0px;
   outline: none;
 }
 
@@ -83,4 +102,10 @@ html{
     left: auto;
     right: 10px;
     transform: rotate(45deg);
+}
+
+h1 {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  font-size: 25px;
 }
